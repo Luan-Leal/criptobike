@@ -3,6 +3,7 @@ import withAsyncImport from './utils/withAsyncImport';
 import './components/Page/Page';
 import './components/Container/Container';
 import './components/ExperienceFragment/ExperienceFragment';
+import './components/ReactHome'
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 

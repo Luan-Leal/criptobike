@@ -1,0 +1,38 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  line-height: 5%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  .left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 30vw;
+    img {
+      width: 90%;
+      height: auto;
+    }
+
+    p {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      line-height: 30px;
+      width: 80%;
+    }
+  }
+  .right {
+    width: 70vw;
+    img {
+      width: 110%;
+      margin-left: 2%;
+    }
+  }
+}
