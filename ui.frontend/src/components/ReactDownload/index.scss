@@ -1,0 +1,37 @@
+.download {
+  background-image: url(../../assets/BackgroundDownloadFullHd.svg);
+  background-size: cover;
+  height: 740px;
+  z-index: 999;
+
+  .downloadContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 740px;
+    margin-left: 3%;
+    img {
+      width: 25%;
+      height: auto;
+      &:nth-child(2) {
+        width: 30%;
+      }
+    }
+    .download-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 45vw;
+    }
+  }
+
+  figure {
+    .waves,
+    .smartphone {
+      position: absolute;
+      width: 100%;
+      bottom: -70vw;
+    }
+  }
+}

@@ -4,6 +4,10 @@ import './components/Page/Page';
 import './components/Container/Container';
 import './components/ExperienceFragment/ExperienceFragment';
 import './components/ReactHome'
+import "./components/ReactDownload"
+import "./components/ReactVideo"
+import "./components/ReactAbout"
+import "./components/ReactCarousel"
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 
