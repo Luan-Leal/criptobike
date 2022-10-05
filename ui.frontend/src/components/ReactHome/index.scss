@@ -1,38 +1,34 @@
-section {
+.home {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  line-height: 5%;
+  align-items: flex-start;
+  flex-direction: column;
   overflow-y: hidden;
   overflow-x: hidden;
-  .left {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-left: 10%;
-    width: 30vw;
-    img {
-      width: 90%;
-      height: auto;
-    }
-
-    p {
-      font-family: "Mulish";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      line-height: 30px;
-      width: 80%;
-    }
+  background: #f0f1f6;
+  background-image: url(../../assets/Home_Section_bike.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 688px;
+  max-width: 100vw;
+  div {
+    width: 30%;
+    margin-left: 5%;
   }
-  .right {
-    width: 70vw;
-    img {
-      width: 110%;
-      margin-left: 2%;
-    }
+  img {
+    width: 95%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+
+  p {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    width: 75%;
+    color: #111213;
   }
 }

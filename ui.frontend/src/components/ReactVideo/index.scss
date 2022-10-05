@@ -1,0 +1,17 @@
+.video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #111213;
+  height: 943px;
+  h1 {
+    color: #ffffff;
+  }
+  .video {
+    iframe {
+      width: 1114px;
+      height: 616px;
+    }
+  }
+}
