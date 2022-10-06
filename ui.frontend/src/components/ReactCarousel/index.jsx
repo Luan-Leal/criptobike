@@ -1,5 +1,6 @@
 import { MapTo } from "@adobe/aem-react-editable-components";
-import { React, useState, useEffect, useRef } from "react";
+import React from "react";
+import { useState, useEffect, useRef } from "react";
 import arrowRight from "../../assets/arrow--right.svg";
 import arrowLeft from "../../assets/arrow--left.svg";
 import Row from "../microcomponent/TitleRow";

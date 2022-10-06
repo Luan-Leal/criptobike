@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;700&display=swap");
+
+* {
+  font-family: "Mulish", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+#TourSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+  background-image: url(../../assets/tour-bg.webp);
+  background-size: contain;
+  height: 603px;
+  background-color: #111213;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  font-weight: 800;
+  .left {
+    width: 40vw;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    div {
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 48px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    span {
+      color: #ffce00;
+    }
+  }
+}
