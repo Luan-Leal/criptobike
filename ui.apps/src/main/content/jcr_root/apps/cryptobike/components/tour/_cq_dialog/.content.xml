@@ -22,7 +22,7 @@
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           jcr:primaryType="nt:unstructured"
-          jcr:title="Home Section"
+          jcr:title="Tour Section"
           sling:resourceType="cq/gui/components/authoring/dialog">
    <content jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -33,11 +33,11 @@
          <column jcr:primaryType="nt:unstructured"
                  sling:resourceType="granite/ui/components/coral/foundation/container">
             <items jcr:primaryType="nt:unstructured">
-               <Text cq-msm-lockable="./Text"
-                     fieldLabel="Digite um texto de boas vindas aqui por favor."
-                     jcr:primaryType="nt:unstructured"
-                     name="./Text"
-                     sling:resourceType="granite/ui/components/coral/foundation/form/textarea"/>
+               <Title cq-msm-lockable="./Title"
+                      fieldLabel="Digite o titulo da sessão."
+                      jcr:primaryType="nt:unstructured"
+                      name="./Title"
+                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
             </items>
          </column>
       </items>

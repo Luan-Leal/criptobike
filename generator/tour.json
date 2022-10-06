@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.uol.cryptobike.core.models",
     "model-impl-pkg": "com.uol.cryptobike.core.models.impl"
   },
-  "name": "home",
-  "title": "Home Section",
+  "name": "tour",
+  "title": "Tour Section",
   "group": "Cryptobike - Content",
   "type": "components",
   "options": {
@@ -27,11 +27,11 @@
     "generic-javadoc": false,
     "properties": [
       {
-        "field": "Text",
-        "label": "Digite um texto de boas vindas aqui por favor.",
-        "type": "textarea",
+        "field": "Title",
+        "label": "Digite o titulo da sessão.",
+        "type": "textfield",
         "json-expose": true,
-        "json-property": "text"
+        "json-property": "title"
       }
     ]
   }

@@ -48,7 +48,7 @@
     "sass-loader": "^6.0.7",
     "sinon": "^7.5.0",
     "style-loader": "^0.20.3",
-    "typescript": "^3.4.2",
+    "typescript": "^3.9.10",
     "webpack": "4.44.2",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "3.11.1",
