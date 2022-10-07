@@ -9,6 +9,7 @@ import "./components/ReactVideo"
 import "./components/ReactAbout"
 import "./components/ReactCarousel"
 import "./components/ReactTour"
+import "./components/ReactRiding"
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 
