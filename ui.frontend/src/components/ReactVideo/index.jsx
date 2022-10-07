@@ -13,13 +13,13 @@ const Video = ({ title }) => {
       </div>
 
       <div className="video">
-        <iframe
+        {/* <iframe
           src="https://www.youtube.com/embed/U5diDURyNlg"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
       </div>
     </section>
   );
