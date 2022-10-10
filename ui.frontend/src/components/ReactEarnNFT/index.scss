@@ -1,0 +1,17 @@
+#EarnSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #111213;
+  font-family: "Mulish";
+  font-weight: 800;
+  font-size: 32px;
+  height: 607px;
+  color: #ffffff;
+  .cards {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+}
