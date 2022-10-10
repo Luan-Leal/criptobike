@@ -1,0 +1,17 @@
+.nftCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #111213;
+  width: 236px;
+  height: 44px;
+  background: #ffce00;
+  border: 1px solid #ffce00;
+}
+
+.nfts {
+  width: 236px;
+  height: auto;
+  display: flex;
+}

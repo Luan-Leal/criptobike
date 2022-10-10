@@ -10,6 +10,7 @@ import "./components/ReactAbout"
 import "./components/ReactCarousel"
 import "./components/ReactTour"
 import "./components/ReactRiding"
+import "./components/ReactEarnNFT"
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 
