@@ -1,9 +1,11 @@
 #BecomePartnerSection {
   display: flex;
-  flex-direction: column;
-  align-self: start;
+  align-self: flex-start;
   justify-content: space-evenly;
+  flex-direction: column;
   height: 595px;
+  background-color: #fff;
+  color: #000;
   .title {
     display: flex;
     h2 {
@@ -30,5 +32,9 @@
     border: none;
     padding: 1% 2.5%;
     color: #111213;
+    &:hover {
+      cursor: pointer;
+      background: #e6a919;
+    }
   }
 }

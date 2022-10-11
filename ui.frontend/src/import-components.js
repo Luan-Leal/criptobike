@@ -11,6 +11,7 @@ import "./components/ReactCarousel"
 import "./components/ReactTour"
 import "./components/ReactRiding"
 import "./components/ReactEarnNFT"
+import "./components/ReactBecomePartner"
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 

@@ -32,7 +32,7 @@ const Carousel = ({ title, button }) => {
   if (!data || !data.length) return null;
 
   return (
-    <section>
+    <section id="CarouselSection">
       <div className="header">
         <div>
           <h1>{title}</h1>
