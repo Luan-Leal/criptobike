@@ -4,12 +4,12 @@ import Row from "../microcomponent/TitleRow";
 
 import "./index.scss";
 
-const BecomePartner = ({ title }) => {
+const BecomePartner = ({ title, button }) => {
   return (
     <section id="BecomePartnerSection">
       <div className="title">
         <h2>
-          Become a Tour de Terre partner
+          {title}
           <Row />
         </h2>
       </div>
@@ -26,7 +26,7 @@ const BecomePartner = ({ title }) => {
         </p>
       </div>
       <div>
-        <button>Become a partner</button>
+        <button>{button}</button>
       </div>
     </section>
   );
