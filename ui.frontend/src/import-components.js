@@ -12,6 +12,8 @@ import "./components/ReactTour"
 import "./components/ReactRiding"
 import "./components/ReactEarnNFT"
 import "./components/ReactBecomePartner"
+import "./components/ReactDownload2"
+import "./components/ReactFooter"
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 
