@@ -1,0 +1,35 @@
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 233px;
+  height: 82px;
+  background: #000000;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card img {
+  margin: 0% 5%;
+}
+
+.card span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.card strong {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.card:hover {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}

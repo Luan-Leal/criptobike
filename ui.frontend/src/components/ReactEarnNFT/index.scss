@@ -1,6 +1,6 @@
 #EarnSection {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
   background-color: #111213;
@@ -10,7 +10,7 @@
   height: 607px;
   color: #ffffff;
   .cards {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }

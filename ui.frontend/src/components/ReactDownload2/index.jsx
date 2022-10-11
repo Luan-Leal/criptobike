@@ -1,5 +1,8 @@
 import { MapTo } from "@adobe/aem-react-editable-components";
 import React from "react";
+import Card from "../microcomponent/Download2Card";
+import GooglePlay from "../../assets/google-play-logo.svg";
+import AppStore from "../../assets/app-store-logo.svg";
 
 import "./index.scss";
 
