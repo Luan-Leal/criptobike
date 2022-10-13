@@ -39,19 +39,19 @@ const Footer = ({}) => {
           <nav>
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="#homeSection">Home</a>
               </li>
               <li>
-                <a href="">About us</a>
+                <a href="#aboutSection">About us</a>
               </li>
               <li>
-                <a href="">How to join</a>
+                <a href="#ridingSection">How to join</a>
               </li>
               <li>
-                <a href="">Become a partner</a>
+                <a href="#becomePartnerSection">Become a partner</a>
               </li>
               <li>
-                <a href="">Community</a>
+                <a href="#communitySection">Community</a>
               </li>
             </ul>
           </nav>
@@ -59,7 +59,7 @@ const Footer = ({}) => {
       </div>
 
       <div className="footer-info">
-        <p className="phrase1">© Cryptobike - 2022 - All rights reserved</p>
+        <p>© Cryptobike - 2022 - All rights reserved</p>
         <p>
           {" "}
           <a href="">Mobile Apps Terms of Use</a>{" "}

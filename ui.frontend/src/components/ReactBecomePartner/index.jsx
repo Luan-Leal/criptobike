@@ -6,7 +6,7 @@ import "./index.scss";
 
 const BecomePartner = ({ title, button }) => {
   return (
-    <section id="BecomePartnerSection">
+    <section id="becomePartnerSection">
       <div className="title">
         <h2>
           {title}
