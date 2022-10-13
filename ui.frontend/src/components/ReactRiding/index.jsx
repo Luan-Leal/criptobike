@@ -10,7 +10,7 @@ import "./index.scss";
 
 const Riding = ({ title }) => {
   return (
-    <section id="RidingSection">
+    <section id="ridingSection">
       <div>
         <h2>
           {title}

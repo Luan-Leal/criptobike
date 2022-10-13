@@ -5,7 +5,7 @@ import "./index.scss";
 
 const Home = ({ text }) => {
   return (
-    <section className="home">
+    <section id="homeSection">
       <div>
         <img src={title} alt="Home section title: Tour de Terre" />
         <p>{text}</p>
