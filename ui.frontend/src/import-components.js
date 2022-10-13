@@ -14,6 +14,7 @@ import "./components/ReactEarnNFT"
 import "./components/ReactBecomePartner"
 import "./components/ReactDownload2"
 import "./components/ReactFooter"
+import "./components/ReactHeader"
 
 import { MapTo } from '@adobe/aem-react-editable-components';
 
