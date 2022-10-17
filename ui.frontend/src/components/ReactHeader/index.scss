@@ -1,22 +1,24 @@
-header {
+@import "../../styles/variables.scss";
+
+.header {
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
   height: 80px;
   background: #111213;
   color: #ffffff;
   width: 100vw;
   padding: 0 3%;
-
-  .headerLogo {
+  .header-grid {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
+
   nav {
     display: flex;
     font-weight: 700;
@@ -53,6 +55,9 @@ header {
     line-height: 24px;
     &:hover {
       color: #ffce00;
+    }
+    @include breakpoint("xl") {
+      border: 1px solid red;
     }
   }
 }

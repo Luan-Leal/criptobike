@@ -11,17 +11,12 @@
     align-items: flex-start;
     height: 740px;
     margin-left: 3%;
-    img {
-      width: 25%;
-      height: auto;
-      &:nth-child(2) {
-        width: 30%;
-      }
-    }
+
     .download-buttons {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 10%;
       width: 45vw;
     }
   }
