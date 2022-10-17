@@ -1,9 +1,11 @@
+import React from "react";
+
 import "./index.scss";
 
 function Card({ text, storeLogo, storeName }) {
   return (
     <div>
-      <a className="cardDownload2" href="">
+      <a className="cardDownload" href="">
         <img src={storeLogo} alt="" />
         <div>
           <span>{text}</span>

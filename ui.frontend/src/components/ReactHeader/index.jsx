@@ -4,6 +4,7 @@ import logo from "../../assets/logo-horizontal-white.svg";
 import close from "../../assets/close.svg";
 import { useState } from "react";
 import Modal from "../microcomponent/Modal";
+import { Grid } from "../Grid/Grid.js";
 
 import "./index.scss";
 
@@ -23,38 +24,40 @@ const Header = ({}) => {
 
   return (
     <>
-      <header>
-        <div className="headerLogo">
-          <img src={logo} alt="" />
+      <Grid className="header">
+        <div className="header-grid">
+          <div className="headerLogo">
+            <img src={logo} alt="" />
+          </div>
+          <nav>
+            <ul>
+              <li className={addStyle}>
+                <a href="#homeSection">Home</a>
+              </li>
+              <li className={addStyle}>
+                <a href="#aboutSection">About us</a>
+              </li>
+              <li className={addStyle}>
+                <a href="#ridingSection">How to join</a>
+              </li>
+              <li className={addStyle}>
+                <a href="#ridingSection">Become a partner</a>
+              </li>
+              <li className={addStyle}>
+                <a href="#communitySection">Community</a>
+              </li>
+            </ul>
+            {isModalVisible ? (
+              <button onClick={handleModalClose}>
+                <div className="close"></div>
+              </button>
+            ) : (
+              <button onClick={handleModalOpen}>EN</button>
+            )}
+          </nav>
+          {isModalVisible ? <Modal /> : null}
         </div>
-        <nav>
-          <ul>
-            <li className={addStyle}>
-              <a href="#homeSection">Home</a>
-            </li>
-            <li className={addStyle}>
-              <a href="#aboutSection">About us</a>
-            </li>
-            <li className={addStyle}>
-              <a href="#ridingSection">How to join</a>
-            </li>
-            <li className={addStyle}>
-              <a href="#ridingSection">Become a partner</a>
-            </li>
-            <li className={addStyle}>
-              <a href="#communitySection">Community</a>
-            </li>
-          </ul>
-          {isModalVisible ? (
-            <button onClick={handleModalClose}>
-              <div className="close"></div>
-            </button>
-          ) : (
-            <button onClick={handleModalOpen}>EN</button>
-          )}
-        </nav>
-      </header>
-      {isModalVisible ? <Modal /> : null}
+      </Grid>
     </>
   );
 };

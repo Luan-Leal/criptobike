@@ -19,9 +19,17 @@ const SecondDownload = ({}) => {
         </div>
 
         <div className="downloadCards">
-          <Card text="Download on the" store={AppStore} />
+          <Card
+            text="Download on the"
+            storeLogo={AppStore}
+            storeName="AppStore"
+          />
 
-          <Card text="Get it on" store={GooglePlay} />
+          <Card
+            text="Get it on"
+            storeLogo={GooglePlay}
+            storeName="GooglePlay"
+          />
         </div>
       </div>
       <div className="right"></div>
