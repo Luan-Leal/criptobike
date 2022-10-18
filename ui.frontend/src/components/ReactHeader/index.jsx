@@ -4,7 +4,7 @@ import logo from "../../assets/logo-horizontal-white.svg";
 import close from "../../assets/close.svg";
 import { useState } from "react";
 import Modal from "../microcomponent/Modal";
-import { Grid } from "../Grid/Grid.js";
+import { Grid } from "../Grid/Grid";
 
 import "./index.scss";
 
