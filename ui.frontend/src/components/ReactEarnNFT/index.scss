@@ -1,17 +1,30 @@
+@import "../../styles/variables.scss";
+
 #EarnSection {
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-direction: column;
   background-color: #111213;
   font-family: "Mulish";
   font-weight: 800;
   font-size: 32px;
-  height: 607px;
   color: #ffffff;
-  .cards {
-    width: 100%;
+  .title {
     display: flex;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    @include breakpoint("xl") {
+      gap: 30;
+    }
+    @include breakpoint("xl") {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30;
+    }
+    @include breakpoint("lg") {
+      display: flex;
+    }
   }
 }
