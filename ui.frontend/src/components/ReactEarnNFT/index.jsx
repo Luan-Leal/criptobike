@@ -2,20 +2,19 @@ import { MapTo } from "@adobe/aem-react-editable-components";
 import React from "react";
 import Row from "../microcomponent/TitleRow";
 import Card from "../microcomponent/NFTCard";
-
+import { Grid } from "./../Grid/Grid";
 import planta from "../../assets/planta.png";
 import rocha from "../../assets/rocha.png";
 import gelo from "../../assets/gelo.png";
 import coral from "../../assets/coral.png";
-
 import "./index.scss";
 
 const EarnNFT = ({ title }) => {
   return (
-    <section id="EarnSection">
+    <Grid id="EarnSection">
       <div className="title">
         <h2>
-          {title} <Row></Row>
+          {title} <Row />
         </h2>
       </div>
       <div className="cards">
@@ -24,7 +23,7 @@ const EarnNFT = ({ title }) => {
         <Card image={gelo} distance="998" />
         <Card image={coral} distance="3,328" />
       </div>
-    </section>
+    </Grid>
   );
 };
 
