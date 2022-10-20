@@ -7,35 +7,38 @@ import star from "../../assets/icon-card-shoting-star.svg";
 import Row from "../microcomponent/TitleRow";
 
 import "./index.scss";
+import { Grid } from "./../Grid/Grid";
 
 const Riding = ({ title }) => {
   return (
-    <section id="ridingSection">
-      <div>
-        <h2>
-          {title}
-          <Row></Row>
-        </h2>
-      </div>
+    <Grid>
+      <section id="ridingSection">
+        <div>
+          <h2>
+            {title}
+            <Row></Row>
+          </h2>
+        </div>
 
-      <div className="cards">
-        <Card
-          image={arrow}
-          title="Connect your account to Strava"
-          text="Download the Strava app and enter your username and password to log in."
-        />
-        <Card
-          image={ciclist}
-          title="Ride and achieve goals"
-          text="Move with Cryptobike and reach the Tour de Terre milestones."
-        />
-        <Card
-          image={star}
-          title="Earn unique NFTs"
-          text="You ride, you earn: achieve goals and earn NFTs of our Cryptobike collection."
-        />
-      </div>
-    </section>
+        <div className="cards">
+          <Card
+            image={arrow}
+            title="Connect your account to Strava"
+            text="Download the Strava app and enter your username and password to log in."
+          />
+          <Card
+            image={ciclist}
+            title="Ride and achieve goals"
+            text="Move with Cryptobike and reach the Tour de Terre milestones."
+          />
+          <Card
+            image={star}
+            title="Earn unique NFTs"
+            text="You ride, you earn: achieve goals and earn NFTs of our Cryptobike collection."
+          />
+        </div>
+      </section>
+    </Grid>
   );
 };
 
