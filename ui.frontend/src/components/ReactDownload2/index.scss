@@ -3,6 +3,8 @@
 #SecondDownloadSection {
   background: #ffce00;
   section {
+    display: flex;
+    justify-content: space-between;
     padding: 0;
     .left {
       display: flex;
@@ -10,19 +12,60 @@
       justify-content: space-evenly;
       gap: 10%;
       flex-direction: column;
-      height: 526px;
       width: 40vw;
+      @include breakpoint("lg") {
+        align-items: center;
+        width: 100vw;
+      }
       h2 {
         font-weight: 800;
         font-size: 40px;
         line-height: 60px;
         color: #111213;
+        width: 80%;
+        margin-bottom: 16px;
+        @include breakpoint("desk") {
+          width: 95%;
+        }
+        @include breakpoint("xl") {
+          width: 110%;
+        }
+        @include breakpoint("lg") {
+          width: 100%;
+        }
+        @include breakpoint("md") {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 30px;
+          width: 80%;
+        }
       }
       p {
         font-weight: 400;
         font-size: 20px;
         line-height: 30px;
         color: #111213;
+        width: 65%;
+        @include breakpoint("desk") {
+          width: 75%;
+        }
+        @include breakpoint("xl") {
+          width: 90%;
+        }
+        @include breakpoint("lg") {
+          width: 100%;
+        }
+        @include breakpoint("md") {
+          font-size: 18px;
+          width: 80%;
+        }
+      }
+      .imgMobile {
+        display: none;
+        @include breakpoint("lg") {
+          display: block;
+          margin: 80px 0;
+        }
       }
       .downloadCards {
         display: flex;
@@ -31,6 +74,21 @@
         flex-direction: row;
         gap: 32px;
         width: 100%;
+        @include breakpoint("lg") {
+          justify-content: center;
+        }
+        @include breakpoint("lg") {
+          gap: 16px;
+        }
+      }
+    }
+    .right {
+      img {
+        margin-bottom: -105px;
+
+        @include breakpoint("lg") {
+          display: none;
+        }
       }
     }
   }

@@ -29,17 +29,17 @@
     background-repeat: no-repeat;
     background-position: right;
 
-    @include breakpoint("sm") {
-      background-image: none;
-      justify-content: flex-start;
-    }
-
     @include breakpoint("lg") {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
       background-image: none;
+    }
+    @include breakpoint("sm") {
+      padding: 0;
+      background-image: none;
+      justify-content: flex-start;
     }
 
     div {

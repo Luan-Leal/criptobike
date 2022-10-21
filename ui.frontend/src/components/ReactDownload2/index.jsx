@@ -4,6 +4,8 @@ import Card from "../microcomponent/Download2Card";
 import GooglePlay from "../../assets/google-play-logo.svg";
 import AppStore from "../../assets/app-store-logo.svg";
 import { Grid } from "../Grid/Grid";
+import imgDesktop from "../../assets/yd-mobile.png";
+import imgMobile from "../../assets/yd-mobilemobile.png";
 import "./index.scss";
 
 const SecondDownload = ({}) => {
@@ -17,6 +19,10 @@ const SecondDownload = ({}) => {
               Earn and access your NFTs, manage your profile, and meet our
               community.
             </p>
+          </div>
+
+          <div>
+            <img className="imgMobile" src={imgMobile} alt="" />
           </div>
 
           <div className="downloadCards">
@@ -33,7 +39,9 @@ const SecondDownload = ({}) => {
             />
           </div>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <img src={imgDesktop} alt="" />
+        </div>
       </section>
     </Grid>
   );
