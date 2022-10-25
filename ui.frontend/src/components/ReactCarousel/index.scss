@@ -1,26 +1,26 @@
 #CarouselSection {
   background: #111213;
-  height: 753px;
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h1 {
-      color: #fff;
-    }
-    a {
-      text-decoration: none;
-      color: #fff;
-      border: 1px solid #ffce00;
-      padding: 0.75%;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 16px;
-      line-height: 32px;
-      &:hover {
-        background-color: #ffce00;
-        color: black;
+  section {
+    .headerCarouselSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1 {
+        color: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #ffce00;
+        padding: 0.75%;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 32px;
+        &:hover {
+          background-color: #ffce00;
+          color: black;
+        }
       }
     }
   }
@@ -40,7 +40,7 @@
     flex: none;
     padding: 0px;
     background-color: #fff;
-    width: 31.5vw;
+    width: 355.33px;
     height: 100%;
     margin: 10px;
     &:first-child {

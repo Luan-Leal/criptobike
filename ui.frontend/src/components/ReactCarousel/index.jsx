@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import arrowRight from "../../assets/arrow--right.svg";
 import arrowLeft from "../../assets/arrow--left.svg";
 import Row from "../microcomponent/TitleRow";
-
 import "./index.scss";
+import { Grid } from "./../Grid/Grid";
 
 const Carousel = ({ title, button }) => {
   const [data, setData] = useState([]);
@@ -32,51 +32,53 @@ const Carousel = ({ title, button }) => {
   if (!data || !data.length) return null;
 
   return (
-    <section id="CarouselSection">
-      <div className="header">
-        <div>
-          <h1>{title}</h1>
-          <Row />
-        </div>
+    <Grid id="CarouselSection">
+      <section>
+        <div className="headerCarouselSection">
+          <div>
+            <h1>{title}</h1>
+            <Row />
+          </div>
 
-        <a href="">
-          {button}
-          <i>
-            <img src={arrowRight} alt="" />
-          </i>
-        </a>
-      </div>
-      <div className="carousel" ref={carousel}>
-        {data.map((item) => {
-          const { id, title, image, link } = item;
-          return (
-            <div className="item" key={id}>
-              <img className="img-article" src={image} alt={title} />
-              <div className="title">
-                <span>{title}</span>
-                <button>
-                  <a href={link} target="_blanck">
-                    Read more
-                    <i>
-                      <img src={arrowRight} alt="" />
-                    </i>
-                  </a>
-                </button>
+          <a href="">
+            {button}
+            <i>
+              <img src={arrowRight} alt="" />
+            </i>
+          </a>
+        </div>
+        <div className="carousel" ref={carousel}>
+          {data.map((item) => {
+            const { id, title, image, link } = item;
+            return (
+              <div className="item" key={id}>
+                <img className="img-article" src={image} alt={title} />
+                <div className="title">
+                  <span>{title}</span>
+                  <button>
+                    <a href={link} target="_blanck">
+                      Read more
+                      <i>
+                        <img src={arrowRight} alt="" />
+                      </i>
+                    </a>
+                  </button>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-      <div className="buttons">
-        botão
-        <button onClick={handleLeftClick}>
-          <img src={arrowLeft} alt="" />
-        </button>
-        <button onClick={handleRightClick}>
-          <img src={arrowRight} alt="" />
-        </button>
-      </div>
-    </section>
+            );
+          })}
+        </div>
+        <div className="buttons">
+          botão
+          <button onClick={handleLeftClick}>
+            <img src={arrowLeft} alt="" />
+          </button>
+          <button onClick={handleRightClick}>
+            <img src={arrowRight} alt="" />
+          </button>
+        </div>
+      </section>
+    </Grid>
   );
 };
 
